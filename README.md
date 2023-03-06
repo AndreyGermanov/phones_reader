@@ -1,2 +1,3 @@
-# phones_reader
-Handwritten phone numbers recognizer
+# Handwritten phone numbers recognizer
+
+The source code for this article:
