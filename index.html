@@ -73,8 +73,7 @@
     // "Recognise" button handler. Captures
     // content of all digit canvases as BLOB.
     // Construct files from these blobs and
-    // posts them to backend as a files as a
-    // multipart form
+    // posts them to backend as files
     document.querySelector("#recognise").addEventListener("click", async() => {
         data = new FormData();
         canvases = document.querySelectorAll("canvas");
