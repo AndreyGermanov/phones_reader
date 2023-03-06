@@ -30,7 +30,6 @@ route("/api/recognize", method=POST) do
 end
 
 route("/") do 
-    println(pwd())
     String(read("index.html"))
 end
 
