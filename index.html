@@ -88,7 +88,6 @@
         index = 0
         for (let canvas of canvases) {
             const png = await getPng(canvas);
-            console.log(png);
             data.append((++index)+".png",new File([png],index+".png"));
         }
         const response = await fetch("http://localhost:8080/api/recognize", {

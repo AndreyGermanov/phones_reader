@@ -10,7 +10,7 @@ function recognizeDigit(img)
     # resize image to 28x28 pixels
     img = imresize(img,(28,28))
     # Get matrix of image
-    digit_data = Float64.(channelview(img))
+    digit_data = Float32.(channelview(img))
     # predict the digit (get probabilities)
     probs = model(cat(digit_data,dims=4))
     # return the digit with the largest 
@@ -25,11 +25,12 @@ route("/api/recognize", method=POST) do
         file = files["$index.png"]
         img = load(IOBuffer(file.data))
         result *= recognizeDigit(img)        
-    end
+    end    
     return result
 end
 
 route("/") do 
+    println(pwd())
     String(read("index.html"))
 end
 
