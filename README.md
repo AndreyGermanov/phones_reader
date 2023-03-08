@@ -2,4 +2,14 @@
 
 The source code for this article: https://www.freecodecamp.org/news/deep-learning-with-julia/
 
-<div align="center"><img src="https://www.freecodecamp.org/news/content/images/2023/03/frontend.png"/></div>
+<div align="center">
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/embed/e5ScpCggVbs"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+</div>
